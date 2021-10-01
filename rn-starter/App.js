@@ -15,7 +15,7 @@ const navigator = createStackNavigator(
   },
   {
     // The first component it should display
-    initialRouteName: "ListE",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "App",
     },

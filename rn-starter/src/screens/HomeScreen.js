@@ -1,15 +1,29 @@
 import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
-  const name = "Jiayin Li";
-  const welcomeGreeting = (
-    <Text style={styles.textStyle1}>Getting started with React Native!</Text>
-  );
+const HomeScreen = ({ navigation }) => {
+  // Just want the navigation property from prop
+  // const name = "Jiayin Li";
+  // const welcomeGreeting = (
+  //   <Text style={styles.textStyle1}>Getting started with React Native!</Text>
+  // );
+  // console.log(props.navigation);
+  // Inside navigation, there is a property called navigate which
+  // is a function that can change the content that is visible on the screen
   return (
     <View>
-      {welcomeGreeting}
-      <Text style={styles.textStyle2}>My name is {name}</Text>
+      <Text style={styles.textStyle2}>Hi There!</Text>
+      <Button
+        onPress={() => navigation.navigate("Components")}
+        title="Go to Components Demo"
+      />
+      {/* <TouchableOpacity onPress={() => props.navigation.navigate("ListE")}>
+        <Text>Go to List Demo</Text>
+      </TouchableOpacity> */}
+      <Button
+        onPress={() => navigation.navigate("ListE")}
+        title="Go to List Demo"
+      />
     </View>
   );
 };
