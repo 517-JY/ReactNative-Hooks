@@ -4,6 +4,8 @@ import HomeScreen from "./src/screens/HomeScreen";
 import ComponentsScreen from "./src/screens/ComponentsScreen";
 import ListScreen from "./src/screens/ListScreen";
 import ListScreenExercise from "./src/screens/ListScreenExercise";
+import ImageScreen from "./src/screens/ImageScreen";
+import ImageScreenExercise from "./src/screens/ImageScreenExercise";
 
 const navigator = createStackNavigator(
   {
@@ -12,6 +14,8 @@ const navigator = createStackNavigator(
     Components: ComponentsScreen,
     List: ListScreen,
     ListE: ListScreenExercise,
+    Image: ImageScreen,
+    ImageE: ImageScreenExercise,
   },
   {
     // The first component it should display
