@@ -7,6 +7,7 @@ import ListScreenExercise from "./src/screens/ListScreenExercise";
 import ImageScreen from "./src/screens/ImageScreen";
 import ImageScreenExercise from "./src/screens/ImageScreenExercise";
 import CounterScreen from "./src/screens/CounterScreen";
+import ColorScreen from "./src/screens/ColorScreen";
 
 const navigator = createStackNavigator(
   {
@@ -18,6 +19,7 @@ const navigator = createStackNavigator(
     Image: ImageScreen,
     ImageE: ImageScreenExercise,
     Counter: CounterScreen,
+    Color: ColorScreen,
   },
   {
     // The first component it should display
